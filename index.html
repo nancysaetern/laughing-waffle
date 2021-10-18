@@ -9,22 +9,27 @@
     <title>Code Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id= "answer-buttons" class="btn grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-        </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="start-btn" class="start-btn btn">Next</button>
+    <div id="wrapper">
+        <a href="highscore.html">View High Scores</a>
+        <div id="currentTime"></div>
+        <div id="codeQuiz"></div>
+
+        <div id="start">
+            <h1>Javascript Quiz Challenge</h1>
+
+            <p class="info">
+            Try to answer all the code related questions.<br />
+            Keep in mind that when you answer a question incorrectly<br />
+            the time is subtracted from the clock by <span>10 seconds</span>!
+            </p>
+            <ul id="choicesUl"></ul>
+            <button id="startBtn">Start Quiz</button>
         </div>
     </div>
-    
-    <script src="assests/script.js"></script>
+
+    <script src="./assests/script.js"></script>
+    <script src="assests/questions.js"></script>
+    <script src="./assests/scores.js"></script>
+
 </body>
 </html>
